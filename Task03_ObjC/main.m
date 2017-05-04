@@ -11,7 +11,10 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        for (int i = 0; i < 10; i++) {
+            NSLog(@"%i", arc4random_uniform(10));
+        }
+        
     }
     return 0;
 }

@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		56CFEC281EBB3D2900FCE193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC271EBB3D2900FCE193 /* main.m */; };
+		56CFEC301EBB40EB00FCE193 /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC2F1EBB40EB00FCE193 /* Building.m */; };
+		56CFEC331EBB449B00FCE193 /* CarWash.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC321EBB449B00FCE193 /* CarWash.m */; };
+		56CFEC361EBB44A900FCE193 /* Office.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC351EBB44A900FCE193 /* Office.m */; };
+		56CFEC391EBB452B00FCE193 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC381EBB452B00FCE193 /* Car.m */; };
+		56CFEC3D1EBB468200FCE193 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC3C1EBB468200FCE193 /* Worker.m */; };
+		56CFEC401EBB473B00FCE193 /* CarWasher.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC3F1EBB473B00FCE193 /* CarWasher.m */; };
+		56CFEC431EBB478300FCE193 /* Accountant.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC421EBB478300FCE193 /* Accountant.m */; };
+		56CFEC461EBB47C500FCE193 /* Boss.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC451EBB47C500FCE193 /* Boss.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,22 @@
 /* Begin PBXFileReference section */
 		56CFEC241EBB3D2900FCE193 /* Task03_ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task03_ObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CFEC271EBB3D2900FCE193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56CFEC2E1EBB40EB00FCE193 /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Building.h; sourceTree = "<group>"; };
+		56CFEC2F1EBB40EB00FCE193 /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Building.m; sourceTree = "<group>"; };
+		56CFEC311EBB449B00FCE193 /* CarWash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarWash.h; sourceTree = "<group>"; };
+		56CFEC321EBB449B00FCE193 /* CarWash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarWash.m; sourceTree = "<group>"; };
+		56CFEC341EBB44A900FCE193 /* Office.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Office.h; sourceTree = "<group>"; };
+		56CFEC351EBB44A900FCE193 /* Office.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Office.m; sourceTree = "<group>"; };
+		56CFEC371EBB452B00FCE193 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		56CFEC381EBB452B00FCE193 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		56CFEC3B1EBB468200FCE193 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		56CFEC3C1EBB468200FCE193 /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		56CFEC3E1EBB473B00FCE193 /* CarWasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarWasher.h; sourceTree = "<group>"; };
+		56CFEC3F1EBB473B00FCE193 /* CarWasher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarWasher.m; sourceTree = "<group>"; };
+		56CFEC411EBB478300FCE193 /* Accountant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accountant.h; sourceTree = "<group>"; };
+		56CFEC421EBB478300FCE193 /* Accountant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accountant.m; sourceTree = "<group>"; };
+		56CFEC441EBB47C500FCE193 /* Boss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boss.h; sourceTree = "<group>"; };
+		56CFEC451EBB47C500FCE193 /* Boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +81,41 @@
 		56CFEC261EBB3D2900FCE193 /* Task03_ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				56CFEC4B1EBB4D1500FCE193 /* Buildings */,
+				56CFEC3A1EBB466C00FCE193 /* Workers */,
 				56CFEC271EBB3D2900FCE193 /* main.m */,
 			);
 			path = Task03_ObjC;
+			sourceTree = "<group>";
+		};
+		56CFEC3A1EBB466C00FCE193 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				56CFEC3B1EBB468200FCE193 /* Worker.h */,
+				56CFEC3E1EBB473B00FCE193 /* CarWasher.h */,
+				56CFEC371EBB452B00FCE193 /* Car.h */,
+				56CFEC381EBB452B00FCE193 /* Car.m */,
+				56CFEC3F1EBB473B00FCE193 /* CarWasher.m */,
+				56CFEC3C1EBB468200FCE193 /* Worker.m */,
+				56CFEC411EBB478300FCE193 /* Accountant.h */,
+				56CFEC421EBB478300FCE193 /* Accountant.m */,
+				56CFEC441EBB47C500FCE193 /* Boss.h */,
+				56CFEC451EBB47C500FCE193 /* Boss.m */,
+			);
+			name = Workers;
+			sourceTree = "<group>";
+		};
+		56CFEC4B1EBB4D1500FCE193 /* Buildings */ = {
+			isa = PBXGroup;
+			children = (
+				56CFEC2E1EBB40EB00FCE193 /* Building.h */,
+				56CFEC2F1EBB40EB00FCE193 /* Building.m */,
+				56CFEC341EBB44A900FCE193 /* Office.h */,
+				56CFEC351EBB44A900FCE193 /* Office.m */,
+				56CFEC311EBB449B00FCE193 /* CarWash.h */,
+				56CFEC321EBB449B00FCE193 /* CarWash.m */,
+			);
+			name = Buildings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +175,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CFEC391EBB452B00FCE193 /* Car.m in Sources */,
+				56CFEC3D1EBB468200FCE193 /* Worker.m in Sources */,
+				56CFEC401EBB473B00FCE193 /* CarWasher.m in Sources */,
 				56CFEC281EBB3D2900FCE193 /* main.m in Sources */,
+				56CFEC301EBB40EB00FCE193 /* Building.m in Sources */,
+				56CFEC331EBB449B00FCE193 /* CarWash.m in Sources */,
+				56CFEC461EBB47C500FCE193 /* Boss.m in Sources */,
+				56CFEC361EBB44A900FCE193 /* Office.m in Sources */,
+				56CFEC431EBB478300FCE193 /* Accountant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +198,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -181,7 +245,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
