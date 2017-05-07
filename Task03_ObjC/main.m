@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IDPBuilding.h"
+#import "IDPCarWashTests.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        for (int i = 0; i < 10; i++) {
-            NSLog(@"%i", arc4random_uniform(10));
-        }
-        
+        IDPCarWashTest();
     }
+    
     return 0;
 }

@@ -1,15 +1,13 @@
 //
-//  Office.h
+//  Boss.h
 //  Task03_ObjC
 //
 //  Created by Student003 on 5/4/17.
 //  Copyright © 2017 Student003. All rights reserved.
 //
 
-#import "Building.h"
+#import "IDPWorker.h"
 
-@interface Office : Building
-
-
+@interface IDPBoss : IDPWorker
 
 @end

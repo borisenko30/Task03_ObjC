@@ -6,8 +6,8 @@
 //  Copyright © 2017 Student003. All rights reserved.
 //
 
-#import "Car.h"
+#import "IDPCar.h"
 
-@implementation Car
+@implementation IDPCar
 
 @end

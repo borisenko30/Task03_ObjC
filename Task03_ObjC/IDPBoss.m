@@ -6,8 +6,8 @@
 //  Copyright © 2017 Student003. All rights reserved.
 //
 
-#import "Boss.h"
+#import "IDPBoss.h"
 
-@implementation Boss
+@implementation IDPBoss
 
 @end
