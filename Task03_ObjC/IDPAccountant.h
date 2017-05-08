@@ -8,6 +8,10 @@
 
 #import "IDPWorker.h"
 
+@class IDPBoss;
+
 @interface IDPAccountant : IDPWorker
+
+- (void)countMoneyforBoss:(IDPBoss *)boss;
 
 @end

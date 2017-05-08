@@ -7,7 +7,14 @@
 //
 
 #import "IDPAccountant.h"
+#import "IDPBoss.h"
 
 @implementation IDPAccountant
+
+- (void)countMoneyforBoss:(IDPBoss *)boss{
+    NSUInteger money = self.cash;
+    NSLog(@"Counted money: %lu", money);
+    [self giveMoney:money toWorker:boss];
+}
 
 @end

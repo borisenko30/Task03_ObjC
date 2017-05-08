@@ -24,9 +24,7 @@
 }
 
 - (void)removeLastIDPObject{
-    if ([self count]) {
         [self removeLastObject];
-    }
 }
 
 @end

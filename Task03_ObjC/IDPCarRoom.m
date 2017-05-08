@@ -7,8 +7,10 @@
 //
 
 #import "IDPCarRoom.h"
+#import "IDPCar.h"
+#import "NSMutableArray+IDPExtensions.h"
 
-@interface IDPRoom ()
+@interface IDPCarRoom ()
 @property (nonatomic, retain) NSMutableArray *mutableCars;
 
 @end

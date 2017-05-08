@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "IDPBuilding.h"
-#import "IDPWorker.h"
+
+@class IDPWorker;
 
 @interface IDPRoom : IDPBuilding
 @property (nonatomic, readonly, copy) NSArray *personal;

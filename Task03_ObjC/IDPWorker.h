@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IDPMoneyProtocol.h"
 
-@interface IDPWorker : NSObject
+@interface IDPWorker : NSObject <IDPMoneyProtocol>
+@property (nonatomic, assign) NSUInteger salary;
+@property (nonatomic, assign) NSUInteger experience;
+@property (nonatomic, assign) NSUInteger cash;
 
 @end

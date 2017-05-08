@@ -10,4 +10,23 @@
 
 @implementation IDPWorker
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.cash = 0;
+    }
+    
+    return self;
+}
+
+- (void)giveMoney:(NSUInteger)money toWorker:(IDPWorker *)worker {
+    NSUInteger cashAmount = self.cash;
+    if (cashAmount >= money) {
+        cashAmount -= money;
+        worker.cash += money;
+    } else {
+        NSLog(@"No money - no honey!");
+    }
+}
+
 @end

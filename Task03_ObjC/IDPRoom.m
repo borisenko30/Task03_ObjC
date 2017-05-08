@@ -7,6 +7,8 @@
 //
 
 #import "IDPRoom.h"
+#import "IDPWorker.h"
+#import "NSMutableArray+IDPExtensions.h"
 
 @interface IDPRoom ()
 @property (nonatomic, retain) NSMutableArray *mutablePersonal;

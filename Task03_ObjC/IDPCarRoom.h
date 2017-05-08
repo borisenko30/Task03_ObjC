@@ -7,7 +7,8 @@
 //
 
 #import "IDPRoom.h"
-#import "IDPCar.h"
+
+@class IDPCar;
 
 @interface IDPCarRoom : IDPRoom
 @property (nonatomic, readonly, copy) NSArray *cars;

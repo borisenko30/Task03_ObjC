@@ -8,6 +8,7 @@
 
 #import "IDPBuilding.h"
 #import "IDPRoom.h"
+#import "NSMutableArray+IDPExtensions.h"
 
 @interface IDPBuilding ()
 @property (nonatomic, retain) NSMutableArray *mutableRooms;

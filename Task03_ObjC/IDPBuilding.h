@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSMutableArray+IDPExtensions.h"
 
 @class IDPRoom;
 
