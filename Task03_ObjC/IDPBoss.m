@@ -12,7 +12,7 @@
 
 - (void)makeProfit {
     NSUInteger beforeTaxes = self.cash;
-    NSUInteger afterTaxes = beforeTaxes/2;
+    NSUInteger afterTaxes = beforeTaxes / 2;
     self.profits = afterTaxes;
     self.cash = beforeTaxes;
     NSLog(@"Boss has got some profit: %lu", afterTaxes);

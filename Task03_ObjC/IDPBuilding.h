@@ -13,7 +13,6 @@
 @interface IDPBuilding : NSObject
 @property (nonatomic, readonly, copy) NSArray *rooms;
 
-- (NSArray *)rooms;
 - (void)addRoom:(IDPRoom *)room;
 - (void)removeRoomAtIndex:(NSUInteger)index;
 - (void)removeLastRoom;

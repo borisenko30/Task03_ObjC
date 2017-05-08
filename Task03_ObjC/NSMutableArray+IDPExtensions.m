@@ -10,7 +10,7 @@
 
 @implementation NSMutableArray (IDPExtensions)
 
-- (void)addIDPObject:(id)object{
+- (void)safeAddObject:(id)object{
     if (object) {
         [self addObject:object];
     }
@@ -24,7 +24,7 @@
 }
 
 - (void)removeLastIDPObject{
-        [self removeLastObject];
+    [self removeLastObject];
 }
 
 @end

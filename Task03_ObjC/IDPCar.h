@@ -18,5 +18,4 @@ typedef NS_ENUM(NSUInteger, IDPState) {
 @property (nonatomic, assign) IDPState   state;
 @property (nonatomic, assign) NSUInteger cash;
 
-
 @end

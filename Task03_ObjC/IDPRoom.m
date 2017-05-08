@@ -16,6 +16,7 @@
 @end
 
 @implementation IDPRoom
+
 @dynamic personal;
 
 - (void)dealloc {
