@@ -13,9 +13,7 @@
 @interface IDPCarRoom : IDPRoom
 @property (nonatomic, readonly, copy) NSArray *cars;
 
-- (NSArray *)cars;
 - (void)addCar:(IDPCar *) car;
-- (void)removeCarAtIndex:(NSUInteger) index;
-- (void)removeLastCar;
+- (void)removeCar:(IDPCar *) car;
 
 @end

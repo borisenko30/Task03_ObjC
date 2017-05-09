@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSUInteger const kIDPMinCashAmount;
-extern NSUInteger const kIDPMaxCashAmount;
-extern NSUInteger const kIDPCarWashCost;
+#define constantDeclaration(type, name) extern type const name;
+
+constantDeclaration(NSUInteger, IDPCarWashCost)
+constantDeclaration(NSUInteger, IDPMaxArrayLength)
+constantDeclaration(NSRange, IDPCashRange)

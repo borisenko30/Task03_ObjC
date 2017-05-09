@@ -14,4 +14,7 @@
 
 - (void)giveMoney:(NSUInteger)money toWorker:(IDPWorker *)worker;
 
+@optional
+- (void)takeMoney:(NSUInteger)money fromWorker:(IDPWorker *)worker;
+
 @end

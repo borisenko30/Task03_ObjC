@@ -14,7 +14,9 @@
 @property (nonatomic, readonly, copy) NSArray *rooms;
 
 - (void)addRoom:(IDPRoom *)room;
-- (void)removeRoomAtIndex:(NSUInteger)index;
-- (void)removeLastRoom;
+- (void)removeRoom:(IDPRoom *)room;
+- (NSArray *)carWashers;
+- (NSArray *)accountants;
+- (NSArray *)directors;
 
 @end

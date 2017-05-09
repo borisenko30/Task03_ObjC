@@ -8,45 +8,57 @@
 
 #import "IDPRoom.h"
 #import "IDPWorker.h"
+#import "IDPCarWasher.h"
+#import "IDPAccountant.h"
+#import "IDPDirector.h"
+
 #import "NSMutableArray+IDPExtensions.h"
 
 @interface IDPRoom ()
-@property (nonatomic, retain) NSMutableArray *mutablePersonal;
+@property (nonatomic, retain) NSMutableArray *mutableWorkers;
 
 @end
 
 @implementation IDPRoom
 
-@dynamic personal;
+@dynamic workers;
 
 - (void)dealloc {
-    self.mutablePersonal = nil;
+    self.mutableWorkers = nil;
     [super dealloc];
 }
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.mutablePersonal = [NSMutableArray array];
+        self.mutableWorkers = [NSMutableArray array];
     }
     
     return self;
 }
 
-- (NSArray *)personal {
-    return [[self.mutablePersonal copy]autorelease];
+- (NSArray *)workers {
+    return [[self.mutableWorkers copy]autorelease];
 }
 
 - (void)addWorker:(IDPWorker *)worker {
-    [self.mutablePersonal addIDPObject:worker];
+    [self.mutableWorkers safeAddObject:worker];
 }
 
-- (void)removeWorkerAtIndex:(NSUInteger) index{
-    [self.mutablePersonal removeIDPObjectAtIndex:index];
+- (void)removeWorker:(IDPWorker *)worker {
+    [self.mutableWorkers safeRemoveObject:worker];
 }
 
--(void)removeLastWorker {
-    [self.mutablePersonal removeLastIDPObject];
+- (NSArray *)carWashers {
+    return [self.mutableWorkers objectsOfClass:[IDPCarWasher class]];
+}
+
+- (NSArray *)accountants {
+    return [self.mutableWorkers objectsOfClass:[IDPAccountant class]];
+}
+
+- (NSArray *)directors {
+    return [self.mutableWorkers objectsOfClass:[IDPDirector class]];
 }
 
 @end

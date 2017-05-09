@@ -7,6 +7,7 @@
 //
 
 #import "NSMutableArray+IDPExtensions.h"
+#import "NSObject+IDPExtensions.h"
 
 @implementation NSMutableArray (IDPExtensions)
 
@@ -16,15 +17,19 @@
     }
 }
 
-- (void)removeIDPObjectAtIndex:(NSUInteger)index{
-    NSMutableArray *objects = self;
-    if ([objects count] > index) {
-        [objects removeObjectAtIndex:index];
-    }
+- (void)safeRemoveObject:(id)object {
+    [self removeObject:object];
 }
 
-- (void)removeLastIDPObject{
-    [self removeLastObject];
+- (instancetype)objectsOfClass:(Class)objectClass {
+    NSMutableArray *objects = [NSMutableArray object];
+    for (id object in self) {
+        if ([object isKindOfClass:objectClass]) {
+            [objects addObject:object];
+        }
+    }
+    
+    return objects;
 }
 
 @end

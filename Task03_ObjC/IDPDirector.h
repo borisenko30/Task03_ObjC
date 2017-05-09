@@ -8,7 +8,7 @@
 
 #import "IDPWorker.h"
 
-@interface IDPBoss : IDPWorker
+@interface IDPDirector : IDPWorker
 @property (nonatomic, assign) NSUInteger profits;
 
 - (void)makeProfit;

@@ -15,11 +15,12 @@
 		56CFEC3D1EBB468200FCE193 /* IDPWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC3C1EBB468200FCE193 /* IDPWorker.m */; };
 		56CFEC401EBB473B00FCE193 /* IDPCarWasher.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC3F1EBB473B00FCE193 /* IDPCarWasher.m */; };
 		56CFEC431EBB478300FCE193 /* IDPAccountant.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC421EBB478300FCE193 /* IDPAccountant.m */; };
-		56CFEC461EBB47C500FCE193 /* IDPBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC451EBB47C500FCE193 /* IDPBoss.m */; };
+		56CFEC461EBB47C500FCE193 /* IDPDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFEC451EBB47C500FCE193 /* IDPDirector.m */; };
+		844380D01EC1F0930097CBBD /* NSArray+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 844380CF1EC1F0930097CBBD /* NSArray+IDPExtensions.m */; };
+		844380D31EC1F09A0097CBBD /* NSObject+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 844380D21EC1F09A0097CBBD /* NSObject+IDPExtensions.m */; };
+		844380D61EC259490097CBBD /* IDPEnterprise.m in Sources */ = {isa = PBXBuildFile; fileRef = 844380D51EC259490097CBBD /* IDPEnterprise.m */; };
 		84D992221EBF508F00D6372F /* IDPCarWashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D992211EBF508F00D6372F /* IDPCarWashTests.m */; };
 		84D992261EBF585500D6372F /* IDPRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D992251EBF585500D6372F /* IDPRoom.m */; };
-		84D992311EBF603400D6372F /* NSArray+IDPArrayOfObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9922E1EBF603400D6372F /* NSArray+IDPArrayOfObjects.m */; };
-		84D992321EBF603400D6372F /* NSObject+IDPFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D992301EBF603400D6372F /* NSObject+IDPFactoryObject.m */; };
 		84D992351EBF689200D6372F /* NSMutableArray+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D992341EBF689200D6372F /* NSMutableArray+IDPExtensions.m */; };
 		84D992381EBF6C8700D6372F /* IDPCarRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D992371EBF6C8700D6372F /* IDPCarRoom.m */; };
 /* End PBXBuildFile section */
@@ -54,16 +55,18 @@
 		56CFEC3F1EBB473B00FCE193 /* IDPCarWasher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPCarWasher.m; sourceTree = "<group>"; };
 		56CFEC411EBB478300FCE193 /* IDPAccountant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPAccountant.h; sourceTree = "<group>"; };
 		56CFEC421EBB478300FCE193 /* IDPAccountant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPAccountant.m; sourceTree = "<group>"; };
-		56CFEC441EBB47C500FCE193 /* IDPBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPBoss.h; sourceTree = "<group>"; };
-		56CFEC451EBB47C500FCE193 /* IDPBoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPBoss.m; sourceTree = "<group>"; };
+		56CFEC441EBB47C500FCE193 /* IDPDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPDirector.h; sourceTree = "<group>"; };
+		56CFEC451EBB47C500FCE193 /* IDPDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPDirector.m; sourceTree = "<group>"; };
+		844380CE1EC1F0930097CBBD /* NSArray+IDPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IDPExtensions.h"; sourceTree = "<group>"; };
+		844380CF1EC1F0930097CBBD /* NSArray+IDPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IDPExtensions.m"; sourceTree = "<group>"; };
+		844380D11EC1F09A0097CBBD /* NSObject+IDPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IDPExtensions.h"; sourceTree = "<group>"; };
+		844380D21EC1F09A0097CBBD /* NSObject+IDPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IDPExtensions.m"; sourceTree = "<group>"; };
+		844380D41EC259490097CBBD /* IDPEnterprise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPEnterprise.h; sourceTree = "<group>"; };
+		844380D51EC259490097CBBD /* IDPEnterprise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPEnterprise.m; sourceTree = "<group>"; };
 		84D992201EBF508F00D6372F /* IDPCarWashTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPCarWashTests.h; sourceTree = "<group>"; };
 		84D992211EBF508F00D6372F /* IDPCarWashTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPCarWashTests.m; sourceTree = "<group>"; };
 		84D992241EBF585500D6372F /* IDPRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPRoom.h; sourceTree = "<group>"; };
 		84D992251EBF585500D6372F /* IDPRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPRoom.m; sourceTree = "<group>"; };
-		84D9922D1EBF603400D6372F /* NSArray+IDPArrayOfObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+IDPArrayOfObjects.h"; path = "../../Task01_ObjC/Task01_ObjC/NSArray+IDPArrayOfObjects.h"; sourceTree = "<group>"; };
-		84D9922E1EBF603400D6372F /* NSArray+IDPArrayOfObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+IDPArrayOfObjects.m"; path = "../../Task01_ObjC/Task01_ObjC/NSArray+IDPArrayOfObjects.m"; sourceTree = "<group>"; };
-		84D9922F1EBF603400D6372F /* NSObject+IDPFactoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+IDPFactoryObject.h"; path = "../../Task01_ObjC/Task01_ObjC/NSObject+IDPFactoryObject.h"; sourceTree = "<group>"; };
-		84D992301EBF603400D6372F /* NSObject+IDPFactoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+IDPFactoryObject.m"; path = "../../Task01_ObjC/Task01_ObjC/NSObject+IDPFactoryObject.m"; sourceTree = "<group>"; };
 		84D992331EBF689200D6372F /* NSMutableArray+IDPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+IDPExtensions.h"; sourceTree = "<group>"; };
 		84D992341EBF689200D6372F /* NSMutableArray+IDPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+IDPExtensions.m"; sourceTree = "<group>"; };
 		84D992361EBF6C8700D6372F /* IDPCarRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPCarRoom.h; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 			children = (
 				84D9921E1EBF504200D6372F /* Sources */,
 				56CFEC271EBB3D2900FCE193 /* main.m */,
+				844380D41EC259490097CBBD /* IDPEnterprise.h */,
+				844380D51EC259490097CBBD /* IDPEnterprise.m */,
 			);
 			path = Task03_ObjC;
 			sourceTree = "<group>";
@@ -128,8 +133,8 @@
 				56CFEC3F1EBB473B00FCE193 /* IDPCarWasher.m */,
 				56CFEC411EBB478300FCE193 /* IDPAccountant.h */,
 				56CFEC421EBB478300FCE193 /* IDPAccountant.m */,
-				56CFEC441EBB47C500FCE193 /* IDPBoss.h */,
-				56CFEC451EBB47C500FCE193 /* IDPBoss.m */,
+				56CFEC441EBB47C500FCE193 /* IDPDirector.h */,
+				56CFEC451EBB47C500FCE193 /* IDPDirector.m */,
 				56725C591EC0661D002D550D /* IDPMoneyProtocol.h */,
 			);
 			name = Workers;
@@ -172,12 +177,12 @@
 		84D9922C1EBF600F00D6372F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				84D9922D1EBF603400D6372F /* NSArray+IDPArrayOfObjects.h */,
-				84D9922E1EBF603400D6372F /* NSArray+IDPArrayOfObjects.m */,
+				844380D11EC1F09A0097CBBD /* NSObject+IDPExtensions.h */,
+				844380D21EC1F09A0097CBBD /* NSObject+IDPExtensions.m */,
+				844380CE1EC1F0930097CBBD /* NSArray+IDPExtensions.h */,
+				844380CF1EC1F0930097CBBD /* NSArray+IDPExtensions.m */,
 				84D992331EBF689200D6372F /* NSMutableArray+IDPExtensions.h */,
 				84D992341EBF689200D6372F /* NSMutableArray+IDPExtensions.m */,
-				84D9922F1EBF603400D6372F /* NSObject+IDPFactoryObject.h */,
-				84D992301EBF603400D6372F /* NSObject+IDPFactoryObject.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -241,18 +246,19 @@
 			files = (
 				56CFEC391EBB452B00FCE193 /* IDPCar.m in Sources */,
 				56CFEC3D1EBB468200FCE193 /* IDPWorker.m in Sources */,
-				84D992311EBF603400D6372F /* NSArray+IDPArrayOfObjects.m in Sources */,
 				56725C581EC0613B002D550D /* IDPRandom.m in Sources */,
 				56725C551EC0612C002D550D /* IDPConstants.m in Sources */,
 				56CFEC401EBB473B00FCE193 /* IDPCarWasher.m in Sources */,
 				56CFEC281EBB3D2900FCE193 /* main.m in Sources */,
 				56CFEC301EBB40EB00FCE193 /* IDPBuilding.m in Sources */,
 				84D992381EBF6C8700D6372F /* IDPCarRoom.m in Sources */,
-				84D992321EBF603400D6372F /* NSObject+IDPFactoryObject.m in Sources */,
+				844380D61EC259490097CBBD /* IDPEnterprise.m in Sources */,
 				84D992221EBF508F00D6372F /* IDPCarWashTests.m in Sources */,
-				56CFEC461EBB47C500FCE193 /* IDPBoss.m in Sources */,
+				56CFEC461EBB47C500FCE193 /* IDPDirector.m in Sources */,
+				844380D01EC1F0930097CBBD /* NSArray+IDPExtensions.m in Sources */,
 				84D992261EBF585500D6372F /* IDPRoom.m in Sources */,
 				84D992351EBF689200D6372F /* NSMutableArray+IDPExtensions.m in Sources */,
+				844380D31EC1F09A0097CBBD /* NSObject+IDPExtensions.m in Sources */,
 				56CFEC431EBB478300FCE193 /* IDPAccountant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +356,7 @@
 		56CFEC2C1EBB3D2900FCE193 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -359,7 +365,7 @@
 		56CFEC2D1EBB3D2900FCE193 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};

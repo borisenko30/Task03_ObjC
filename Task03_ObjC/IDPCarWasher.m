@@ -16,8 +16,8 @@
 - (void)washTheCar:(IDPCar *)car {
     NSLog(@"Car is clean: %@", car);
     [car setState:IDPClean];
-    [car giveMoney:kIDPCarWashCost toWorker:self];
-    NSLog(@"Service cost is: %lu", kIDPCarWashCost);
+    [car giveMoney:IDPCarWashCost toWorker:self];
+    NSLog(@"Service cost is: %lu", IDPCarWashCost);
 }
 
 - (void)handOverAllCashToAccountant:(IDPAccountant *)accountant {

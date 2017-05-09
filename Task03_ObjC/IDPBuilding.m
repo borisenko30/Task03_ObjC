@@ -8,7 +8,9 @@
 
 #import "IDPBuilding.h"
 #import "IDPRoom.h"
+
 #import "NSMutableArray+IDPExtensions.h"
+#import "NSArray+IDPExtensions.h"
 
 @interface IDPBuilding ()
 @property (nonatomic, retain) NSMutableArray *mutableRooms;
@@ -38,15 +40,29 @@
 }
 
 - (void)addRoom:(IDPRoom *)room {
-    [self.mutableRooms addIDPObject:room];
+    [self.mutableRooms safeAddObject:room];
 }
 
-- (void)removeRoomAtIndex:(NSUInteger)index{
-    [self.mutableRooms removeIDPObjectAtIndex:index];
+- (void)removeRoom:(IDPRoom *)room {
+    [self.mutableRooms safeRemoveObject:room];
 }
 
-- (void)removeLastRoom {
-    [self.mutableRooms removeLastIDPObject];
+- (NSArray *)carWashers {
+    NSArray *result = [self.mutableRooms arrayFromSubArraysWithSelector:@selector(carWashers)];
+    
+    return result;
+}
+
+- (NSArray *)accountants {
+    NSArray *result = [self.mutableRooms arrayFromSubArraysWithSelector:@selector(accountants)];
+    
+    return result;
+}
+
+- (NSArray *)directors {
+    NSArray *result = [self.mutableRooms arrayFromSubArraysWithSelector:@selector(directors)];
+    
+    return result;
 }
 
 @end

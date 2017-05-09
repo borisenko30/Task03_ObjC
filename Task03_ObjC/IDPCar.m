@@ -17,7 +17,7 @@
     self = [super init];
     if (self) {
         self.state = IDPDirty;
-        self.cash = IDPRandomWithRange(NSMakeRange(kIDPMinCashAmount, kIDPMaxCashAmount));
+        self.cash = IDPRandomWithRange(IDPCashRange);
     }
     return self;
 }

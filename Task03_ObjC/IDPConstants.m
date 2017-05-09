@@ -8,6 +8,9 @@
 
 #import "IDPConstants.h"
 
-NSUInteger const kIDPMinCashAmount = 100;
-NSUInteger const kIDPMaxCashAmount = 300;
-NSUInteger const kIDPCarWashCost = 50;
+#define constantInit(type, name, value) type const name = value;
+
+constantInit(NSUInteger, IDPCarWashCost, 100)
+constantInit(NSUInteger, IDPMaxArrayLength, 10)
+
+NSRange const IDPCashRange = {100, 200};

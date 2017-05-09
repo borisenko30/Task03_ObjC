@@ -10,8 +10,8 @@
 
 @interface NSMutableArray (IDPExtensions)
 
-- (void)addIDPObject:(id)object;
-- (void)removeIDPObjectAtIndex:(NSUInteger)index;
-- (void)removeLastIDPObject;
+- (void)safeAddObject:(id)object;
+- (void)safeRemoveObject:(id)object;
+- (instancetype)objectsOfClass:(Class)objectClass;
 
 @end

@@ -13,7 +13,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.cash = 0;
+        self.state = IDPFree;
     }
     
     return self;

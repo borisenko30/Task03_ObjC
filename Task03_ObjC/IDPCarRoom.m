@@ -8,6 +8,7 @@
 
 #import "IDPCarRoom.h"
 #import "IDPCar.h"
+
 #import "NSMutableArray+IDPExtensions.h"
 
 @interface IDPCarRoom ()
@@ -16,6 +17,7 @@
 @end
 
 @implementation IDPCarRoom
+
 @dynamic cars;
 
 - (void)dealloc {
@@ -37,15 +39,11 @@
 }
 
 - (void)addCar:(IDPCar *)car {
-    [self.mutableCars addIDPObject:car];
+    [self.mutableCars safeAddObject:car];
 }
 
-- (void)removeCarAtIndex:(NSUInteger) index{
-    [self.mutableCars removeIDPObjectAtIndex:index];
-}
-
--(void)removeLastCar {
-    [self.mutableCars removeLastIDPObject];
+- (void)removeCar:(IDPCar *)car {
+    [self.mutableCars safeRemoveObject:car];
 }
 
 @end

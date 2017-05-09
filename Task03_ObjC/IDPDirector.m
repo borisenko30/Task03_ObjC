@@ -6,9 +6,9 @@
 //  Copyright © 2017 Student003. All rights reserved.
 //
 
-#import "IDPBoss.h"
+#import "IDPDirector.h"
 
-@implementation IDPBoss
+@implementation IDPDirector
 
 - (void)makeProfit {
     NSUInteger beforeTaxes = self.cash;

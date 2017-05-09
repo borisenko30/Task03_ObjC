@@ -12,11 +12,12 @@
 @class IDPWorker;
 
 @interface IDPRoom : IDPBuilding
-@property (nonatomic, readonly, copy) NSArray *personal;
+@property (nonatomic, readonly, copy) NSArray *workers;
 
-- (NSArray *)personal;
 - (void)addWorker:(IDPWorker *)worker;
-- (void)removeWorkerAtIndex:(NSUInteger)index;
-- (void)removeLastWorker;
+- (void)removeWorker:(IDPWorker *)worker;
+- (NSArray *)carWashers;
+- (NSArray *)accountants;
+- (NSArray *)directors;
 
 @end
