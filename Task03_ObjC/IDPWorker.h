@@ -15,9 +15,12 @@ typedef NS_ENUM(NSUInteger, IDPWorkerState) {
 };
 
 @interface IDPWorker : NSObject <IDPMoneyProtocol>
-@property (nonatomic, assign) NSUInteger        salary;
-@property (nonatomic, assign) NSUInteger        experience;
-@property (nonatomic, assign) NSUInteger        cash;
-@property (nonatomic, assign) IDPWorkerState    state;
+@property (nonatomic, assign)           NSUInteger        salary;
+@property (nonatomic, assign)           NSUInteger        experience;
+@property (nonatomic, assign)           IDPWorkerState    state;
+
+@property (nonatomic, readonly)         NSUInteger        cash;
+
++ (IDPWorker *)freeWorkerFromArray:(NSArray *)workers;
 
 @end

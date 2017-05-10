@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "IDPMoneyProtocol.h"
 
 typedef NS_ENUM(NSUInteger, IDPCarState) {
@@ -15,7 +16,7 @@ typedef NS_ENUM(NSUInteger, IDPCarState) {
 };
 
 @interface IDPCar : NSObject <IDPMoneyProtocol>
-@property (nonatomic, assign) IDPCarState   state;
-@property (nonatomic, assign) NSUInteger cash;
+@property (nonatomic, assign)           IDPCarState     state;
+@property (nonatomic, readonly, assign) NSUInteger      cash;
 
 @end

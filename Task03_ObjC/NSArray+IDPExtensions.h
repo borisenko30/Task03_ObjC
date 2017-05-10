@@ -11,6 +11,7 @@
 @interface NSArray (IDPArrayOfObjects)
 
 + (instancetype)objectsWithCount:(NSInteger)count factoryBlock:(id (^)(void))block;
+
 - (instancetype)arrayFromSubArraysWithSelector:(SEL)selector;
 
 @end

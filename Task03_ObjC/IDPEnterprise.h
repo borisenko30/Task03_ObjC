@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class IDPBuilding;
+
 @interface IDPEnterprise : NSObject
+
++ (IDPBuilding *)generateOffice;
++ (IDPBuilding *)generateCarWash;
+- (void)startWorking;
 
 @end

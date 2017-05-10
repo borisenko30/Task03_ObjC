@@ -8,6 +8,11 @@
 
 #import "IDPDirector.h"
 
+@interface IDPDirector ()
+@property (nonatomic, assign) NSUInteger cash;
+
+@end
+
 @implementation IDPDirector
 
 - (void)makeProfit {

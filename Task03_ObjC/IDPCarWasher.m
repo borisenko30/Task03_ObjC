@@ -8,20 +8,14 @@
 
 #import "IDPCarWasher.h"
 #import "IDPCar.h"
-#import "IDPAccountant.h"
-#import "IDPConstants.h"
 
 @implementation IDPCarWasher
 
-- (void)washTheCar:(IDPCar *)car {
+- (void)washCar:(IDPCar *)car {
+    self.state = IDPBusy;
     NSLog(@"Car is clean: %@", car);
-    [car setState:IDPClean];
-    [car giveMoney:IDPCarWashCost toWorker:self];
-    NSLog(@"Service cost is: %lu", IDPCarWashCost);
-}
-
-- (void)handOverAllCashToAccountant:(IDPAccountant *)accountant {
-    [self giveMoney:self.cash toWorker:accountant];
+    car.state = IDPClean;
+    self.state = IDPFree;
 }
 
 @end

@@ -12,9 +12,9 @@
 
 @protocol IDPMoneyProtocol <NSObject>
 
-- (void)giveMoney:(NSUInteger)money toWorker:(IDPWorker *)worker;
+- (NSUInteger)giveMoney;
 
 @optional
-- (void)takeMoney:(NSUInteger)money fromWorker:(IDPWorker *)worker;
+- (void)takeMoney:(NSUInteger)money;
 
 @end

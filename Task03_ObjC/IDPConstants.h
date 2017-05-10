@@ -10,6 +10,5 @@
 
 #define constantDeclaration(type, name) extern type const name;
 
-constantDeclaration(NSUInteger, IDPCarWashCost)
 constantDeclaration(NSUInteger, IDPMaxArrayLength)
 constantDeclaration(NSRange, IDPCashRange)

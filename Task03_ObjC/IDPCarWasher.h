@@ -8,12 +8,10 @@
 
 #import "IDPWorker.h"
 
-@class IDPAccountant;
 @class IDPCar;
 
 @interface IDPCarWasher : IDPWorker
 
-- (void)washTheCar:(IDPCar *)car;
-- (void)handOverAllCashToAccountant:(IDPAccountant *)accountant;
+- (void)washCar:(IDPCar *)car;
 
 @end

@@ -22,6 +22,7 @@
 
 - (void)dealloc {
     self.mutableCars = nil;
+    
     [super dealloc];
 }
 

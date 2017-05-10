@@ -8,6 +8,11 @@
 
 #import "IDPWorker.h"
 
+@interface IDPWorker ()
+@property (nonatomic, assign) NSUInteger cash;
+
+@end
+
 @implementation IDPWorker
 
 - (instancetype)init {
@@ -19,14 +24,26 @@
     return self;
 }
 
-- (void)giveMoney:(NSUInteger)money toWorker:(IDPWorker *)worker {
-    NSUInteger cashAmount = self.cash;
-    if (cashAmount >= money) {
-        cashAmount -= money;
-        worker.cash += money;
-    } else {
-        NSLog(@"No money - no honey!");
+- (NSUInteger)giveMoney {
+    NSUInteger money = self.cash;
+    self.cash = 0;
+    
+    return money;
+}
+
+- (void)takeMoney:(NSUInteger)money {
+    self.cash += money;
+}
+
++ (IDPWorker *)freeWorkerFromArray:(NSArray *)workers {
+    IDPWorker *worker;
+    for (worker in workers) {
+        if (worker.state == IDPFree) {
+            return worker;
+        }
     }
+    
+    return nil;
 }
 
 @end

@@ -9,8 +9,7 @@
 #import "IDPConstants.h"
 
 #define constantInit(type, name, value) type const name = value;
+#define constantInitWithRange(type, name, value1, value2) type const name = {value1, value2};
 
-constantInit(NSUInteger, IDPCarWashCost, 100)
-constantInit(NSUInteger, IDPMaxArrayLength, 10)
-
-NSRange const IDPCashRange = {100, 200};
+constantInit(NSUInteger, IDPMaxArrayLength, 5)
+constantInitWithRange(NSRange, IDPCashRange, 100, 200)
