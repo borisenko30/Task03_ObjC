@@ -17,10 +17,6 @@
     }
 }
 
-- (void)safeRemoveObject:(id)object {
-    [self removeObject:object];
-}
-
 - (instancetype)objectsOfClass:(Class)objectClass {
     NSMutableArray *objects = [NSMutableArray object];
     for (id object in self) {

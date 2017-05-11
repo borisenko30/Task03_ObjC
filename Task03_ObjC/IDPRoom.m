@@ -46,7 +46,7 @@
 }
 
 - (void)removeWorker:(IDPWorker *)worker {
-    [self.mutableWorkers safeRemoveObject:worker];
+    [self.mutableWorkers removeObject:worker];
 }
 
 - (NSArray *)carWashers {

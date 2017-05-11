@@ -44,7 +44,7 @@
 }
 
 - (void)removeCar:(IDPCar *)car {
-    [self.mutableCars safeRemoveObject:car];
+    [self.mutableCars removeObject:car];
 }
 
 @end

@@ -10,7 +10,8 @@
 
 @class IDPWorker;
 
-@protocol IDPMoneyProtocol <NSObject>
+@protocol IDPMoneyFlow <NSObject>
+@property (nonatomic, readonly) NSUInteger cash;
 
 - (NSUInteger)giveMoney;
 

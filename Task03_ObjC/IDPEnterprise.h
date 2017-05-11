@@ -8,12 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+#import "IDPMoneyFlow.h"
+
 @class IDPBuilding;
+@class IDPWorker;
+@class IDPCar;
 
 @interface IDPEnterprise : NSObject
+@property (nonatomic, retain) IDPBuilding *office;
+@property (nonatomic, retain) IDPBuilding *carWash;
+@property (nonatomic, retain) NSArray *carWashers;
+@property (nonatomic, retain) NSArray *accountants;
+@property (nonatomic, retain) NSArray *directors;
 
-+ (IDPBuilding *)generateOffice;
-+ (IDPBuilding *)generateCarWash;
-- (void)startWorking;
++ (IDPWorker *)freeWorkerWithArray:(NSArray *)workers;
+
+- (void)startWorkingWithCar:(IDPCar *)car;
 
 @end

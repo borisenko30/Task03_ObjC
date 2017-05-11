@@ -7,20 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IDPMoneyProtocol.h"
+
+#import "IDPMoneyFlow.h"
 
 typedef NS_ENUM(NSUInteger, IDPWorkerState) {
-    IDPFree,
-    IDPBusy
+    IDPWorkerFree,
+    IDPWorkerBusy
 };
 
-@interface IDPWorker : NSObject <IDPMoneyProtocol>
-@property (nonatomic, assign)           NSUInteger        salary;
-@property (nonatomic, assign)           NSUInteger        experience;
-@property (nonatomic, assign)           IDPWorkerState    state;
+@interface IDPWorker : NSObject <IDPMoneyFlow>
+@property (nonatomic, readonly)   NSUInteger        salary;
+@property (nonatomic, readonly)   NSUInteger        experience;
+@property (nonatomic, assign)     IDPWorkerState    state;
+@property (nonatomic, readonly)   NSUInteger        cash;
 
-@property (nonatomic, readonly)         NSUInteger        cash;
-
-+ (IDPWorker *)freeWorkerFromArray:(NSArray *)workers;
+- (void)processObject:(id <IDPMoneyFlow>)object;
+- (void)makeJob;
 
 @end

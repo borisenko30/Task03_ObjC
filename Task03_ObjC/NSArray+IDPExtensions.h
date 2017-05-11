@@ -12,6 +12,8 @@
 
 + (instancetype)objectsWithCount:(NSInteger)count factoryBlock:(id (^)(void))block;
 
-- (instancetype)arrayFromSubArraysWithSelector:(SEL)selector;
+- (instancetype)arrayFromSubArraysWithBlock:(NSArray *(^)(id))block;
+
+- (instancetype)filteredArrayWithBlock:(BOOL(^)(id object))block;
 
 @end

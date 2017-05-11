@@ -44,25 +44,25 @@
 }
 
 - (void)removeRoom:(IDPRoom *)room {
-    [self.mutableRooms safeRemoveObject:room];
+    [self.mutableRooms removeObject:room];
 }
 
 - (NSArray *)carWashers {
-    NSArray *result = [self.mutableRooms arrayFromSubArraysWithSelector:@selector(carWashers)];
-    
-    return result;
+    return [self.mutableRooms arrayFromSubArraysWithBlock:^(id object) {
+        return [object carWashers];
+    }];
 }
 
 - (NSArray *)accountants {
-    NSArray *result = [self.mutableRooms arrayFromSubArraysWithSelector:@selector(accountants)];
-    
-    return result;
+    return [self.mutableRooms arrayFromSubArraysWithBlock:^(id object) {
+        return [object accountants];
+    }];
 }
 
 - (NSArray *)directors {
-    NSArray *result = [self.mutableRooms arrayFromSubArraysWithSelector:@selector(directors)];
-    
-    return result;
+    return [self.mutableRooms arrayFromSubArraysWithBlock:^(id object) {
+        return [object directors];
+    }];
 }
 
 @end

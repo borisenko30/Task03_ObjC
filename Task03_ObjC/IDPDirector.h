@@ -9,7 +9,7 @@
 #import "IDPWorker.h"
 
 @interface IDPDirector : IDPWorker
-@property (nonatomic, assign) NSUInteger profits;
+@property (nonatomic, readonly) NSUInteger profits;
 
 - (void)makeProfit;
 

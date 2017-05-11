@@ -38,11 +38,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5627EF921EC45C41004B62A9 /* IDPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPMacros.h; sourceTree = "<group>"; };
 		56725C531EC06123002D550D /* IDPConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPConstants.h; sourceTree = "<group>"; };
 		56725C541EC0612C002D550D /* IDPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPConstants.m; sourceTree = "<group>"; };
 		56725C561EC06136002D550D /* IDPRandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDPRandom.h; sourceTree = "<group>"; };
 		56725C571EC0613B002D550D /* IDPRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDPRandom.m; sourceTree = "<group>"; };
-		56725C591EC0661D002D550D /* IDPMoneyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPMoneyProtocol.h; sourceTree = "<group>"; };
+		56725C591EC0661D002D550D /* IDPMoneyFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPMoneyFlow.h; sourceTree = "<group>"; };
 		56CFEC241EBB3D2900FCE193 /* Task03_ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task03_ObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CFEC271EBB3D2900FCE193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56CFEC2E1EBB40EB00FCE193 /* IDPBuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPBuilding.h; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		56725C521EC060F3002D550D /* AuxiliaryLib */ = {
 			isa = PBXGroup;
 			children = (
+				5627EF921EC45C41004B62A9 /* IDPMacros.h */,
 				56725C531EC06123002D550D /* IDPConstants.h */,
 				56725C541EC0612C002D550D /* IDPConstants.m */,
 				56725C561EC06136002D550D /* IDPRandom.h */,
@@ -135,7 +137,7 @@
 				56CFEC421EBB478300FCE193 /* IDPAccountant.m */,
 				56CFEC441EBB47C500FCE193 /* IDPDirector.h */,
 				56CFEC451EBB47C500FCE193 /* IDPDirector.m */,
-				56725C591EC0661D002D550D /* IDPMoneyProtocol.h */,
+				56725C591EC0661D002D550D /* IDPMoneyFlow.h */,
 			);
 			name = Workers;
 			sourceTree = "<group>";

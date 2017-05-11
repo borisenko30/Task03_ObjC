@@ -16,6 +16,8 @@
 - (void)addRoom:(IDPRoom *)room;
 - (void)removeRoom:(IDPRoom *)room;
 
-- (NSArray *)workersWithClass:(Class)cls;
+- (NSArray *)carWashers;
+- (NSArray *)accountants;
+- (NSArray *)directors;
 
 @end

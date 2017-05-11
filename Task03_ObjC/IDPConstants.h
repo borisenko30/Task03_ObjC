@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define constantDeclaration(type, name) extern type const name;
+#import "IDPMacros.h"
 
-constantDeclaration(NSUInteger, IDPMaxArrayLength)
-constantDeclaration(NSRange, IDPCashRange)
+IDPDeclareConstant(NSUInteger, IDPMaxArrayLength)

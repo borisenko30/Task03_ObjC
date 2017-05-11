@@ -11,7 +11,7 @@
 @interface NSMutableArray (IDPExtensions)
 
 - (void)safeAddObject:(id)object;
-- (void)safeRemoveObject:(id)object;
+
 - (instancetype)objectsOfClass:(Class)objectClass;
 
 @end

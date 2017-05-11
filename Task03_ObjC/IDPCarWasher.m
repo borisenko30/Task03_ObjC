@@ -11,11 +11,12 @@
 
 @implementation IDPCarWasher
 
-- (void)washCar:(IDPCar *)car {
-    self.state = IDPBusy;
-    NSLog(@"Car is clean: %@", car);
-    car.state = IDPClean;
-    self.state = IDPFree;
+- (void)washCar {
+    NSLog(@"Car is clean!");
+}
+
+- (void)makeJob {
+    [self washCar];
 }
 
 @end

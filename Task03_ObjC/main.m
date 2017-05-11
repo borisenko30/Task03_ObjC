@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IDPBuilding.h"
+
 #import "IDPCarWashTests.h"
 
 int main(int argc, const char * argv[]) {

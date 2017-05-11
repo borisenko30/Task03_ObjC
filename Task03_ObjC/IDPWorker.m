@@ -18,7 +18,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.state = IDPFree;
+        self.state = IDPWorkerFree;
     }
     
     return self;
@@ -35,15 +35,13 @@
     self.cash += money;
 }
 
-+ (IDPWorker *)freeWorkerFromArray:(NSArray *)workers {
-    IDPWorker *worker;
-    for (worker in workers) {
-        if (worker.state == IDPFree) {
-            return worker;
-        }
-    }
+- (void)processObject:(id<IDPMoneyFlow>)object {
+    [self takeMoney:[object giveMoney]];
+    [self makeJob];
+}
+
+- (void)makeJob {
     
-    return nil;
 }
 
 @end

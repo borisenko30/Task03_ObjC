@@ -7,10 +7,18 @@
 //
 
 #import "IDPCarWashTests.h"
+
 #import "IDPEnterprise.h"
+#import "IDPCar.h"
+
+#import "IDPConstants.h"
+
 #import "NSObject+IDPExtensions.h"
 
 void IDPCarWashTest() {
+    NSArray *cars = [IDPCar objectsWithCount:IDPMaxArrayLength];
     IDPEnterprise *enterprise = [IDPEnterprise object];
-    [enterprise startWorking];
+    for (IDPCar *car in cars ) {
+        [enterprise startWorkingWithCar:car];
+    }
 }

@@ -7,9 +7,11 @@
 //
 
 #import "IDPCar.h"
-#import "IDPConstants.h"
+#import "IDPMacros.h"
 #import "IDPRandom.h"
 #import "IDPWorker.h"
+
+IDPStaticConstantRange(NSRange, IDPCashRange, 100, 200)
 
 @interface IDPCar ()
 @property (nonatomic, assign) NSUInteger cash;
@@ -21,7 +23,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.state = IDPDirty;
+        self.state = IDPCarDirty;
         self.cash = IDPRandomWithRange(IDPCashRange);
     }
     

@@ -14,4 +14,8 @@
     NSLog(@"Counted money: %lu", self.cash);
 }
 
+- (void)makeJob {
+    [self countMoney];
+}
+
 @end

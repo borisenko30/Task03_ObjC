@@ -24,17 +24,25 @@
     return objects;
 }
 
-- (instancetype)arrayFromSubArraysWithSelector:(SEL)selector {
-    if (!selector) {
+- (instancetype)arrayFromSubArraysWithBlock:(NSArray *(^)(id))block {
+    if (!block) {
         return nil;
     }
     
     NSArray *result = [NSArray array];
     for (id object in self) {
-        result = [result arrayByAddingObjectsFromArray:[object performSelector:selector]];
+        result = [result arrayByAddingObjectsFromArray:block(object)];
     }
     
     return result;
+}
+
+- (instancetype)filteredArrayWithBlock:(BOOL(^)(id object))block {
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id object, NSDictionary * bindings) {
+        return block(object);
+    }];
+    
+    return [self filteredArrayUsingPredicate:predicate];
 }
 
 @end

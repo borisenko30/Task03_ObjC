@@ -10,68 +10,71 @@
 #import "IDPBuilding.h"
 #import "IDPRoom.h"
 #import "IDPCarRoom.h"
+
 #import "IDPCarWasher.h"
 #import "IDPAccountant.h"
 #import "IDPDirector.h"
 #import "IDPCar.h"
 
-#import "IDPConstants.h"
-
 #import "NSObject+IDPExtensions.h"
 
 @implementation IDPEnterprise
 
-+ (IDPBuilding *)generateOffice {
-    IDPBuilding *office = [IDPBuilding object];
-    IDPRoom *room = [IDPRoom object];
-    IDPAccountant *accountant = [IDPAccountant object];
-    IDPDirector *director = [IDPDirector object];
-    
-    [office addRoom:room];
-    [room addWorker:accountant];
-    [room addWorker:director];
-    
-    return office;
-}
-
-+ (IDPBuilding *)generateCarWash {
-    IDPBuilding *carWash = [IDPBuilding object];
-    IDPCarRoom *carRoom = [IDPCarRoom object];
-    IDPCarWasher *carWasher = [IDPCarWasher object];
-    
-    [carWash addRoom:carRoom];
-    [carRoom addWorker:carWasher];
-    
-    return carWash;
-}
-
-- (void)startWorking {
-    IDPBuilding *office = [IDPEnterprise generateOffice];
-    IDPBuilding *carWash = [IDPEnterprise generateCarWash];
-    
-    NSArray *cars = [IDPCar objectsWithCount:IDPMaxArrayLength];
-    NSArray *carWashers = [carWash carWashers];
-    NSArray *accountants = [office accountants];
-    NSArray *directors = [office directors];
-    
-    for (IDPCar *car in cars) {
-        IDPCarWasher *carWasher = (IDPCarWasher *)[IDPCarWasher freeWorkerFromArray:carWashers];
-        if (carWasher) {
-            [carWasher washCar:car];
-            [carWasher takeMoney:[car giveMoney]];
++ (IDPWorker *)freeWorkerWithArray:(NSArray *)workers {
+    IDPWorker *worker;
+    for (worker in workers) {
+        if (worker.state == IDPWorkerFree) {
+            return worker;
         }
-        IDPAccountant *accountant = (IDPAccountant *)[IDPAccountant freeWorkerFromArray:accountants];
-        if (accountants) {
-            [accountant takeMoney:[carWasher giveMoney]];
-            [accountant countMoney];
-        }
-        IDPDirector *director = (IDPDirector *)[IDPDirector freeWorkerFromArray:directors];
-        if (director) {
-            [director takeMoney:[accountant giveMoney]];
-            [director makeProfit];
-        }
-        NSLog(@"----------");
     }
+    
+    return worker;
+}
+
+- (void)dealloc {
+    self.office = nil;
+    self.carWash = nil;
+    self.carWashers = nil;
+    self.accountants = nil;
+    self.directors = nil;
+    
+    [super dealloc];
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.office = [IDPBuilding object];
+        [self.office addRoom:[IDPRoom object]];
+        [self.office.rooms[0] addWorker:[IDPAccountant object]];
+        [self.office.rooms[0] addWorker:[IDPDirector object]];
+        
+        self.carWash = [IDPBuilding object];
+        [self.carWash addRoom:[IDPCarRoom object]];
+        [self.carWash.rooms[0] addWorker:[IDPCarWasher object]];
+        
+        self.carWashers = [self.carWash carWashers];
+        self.accountants = [self.office accountants];
+        self.directors = [self.office directors];
+    }
+    
+    return self;
+}
+
+- (void)startWorkingWithCar:(IDPCar *)car {
+    IDPCarWasher *carWasher = (IDPCarWasher *)[IDPEnterprise freeWorkerWithArray:self.carWashers];
+    if (carWasher) {
+        [carWasher processObject:car];
+    }
+    IDPAccountant *accountant = (IDPAccountant *)[IDPEnterprise freeWorkerWithArray:self.accountants];
+    if (accountant) {
+        [accountant processObject:carWasher];
+    }
+    IDPDirector *director = (IDPDirector *)[IDPEnterprise freeWorkerWithArray:self.directors];
+    if (director) {
+        [director processObject:accountant];
+    }
+    NSLog(@"-----------------------");
 }
 
 @end
