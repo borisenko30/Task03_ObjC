@@ -16,6 +16,8 @@
 
 @implementation IDPDirector
 
+@dynamic cash;
+
 - (void)makeProfit {
     self.profits += self.cash;
     self.cash = 0;

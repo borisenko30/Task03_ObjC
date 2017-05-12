@@ -24,7 +24,7 @@
     return objects;
 }
 
-- (instancetype)arrayFromSubArraysWithBlock:(NSArray *(^)(id))block {
+- (instancetype)arrayFromArraysWithBlock:(NSArray *(^)(id))block {
     if (!block) {
         return nil;
     }

@@ -48,20 +48,20 @@
 }
 
 - (NSArray *)carWashers {
-    return [self.mutableRooms arrayFromSubArraysWithBlock:^(id object) {
-        return [object carWashers];
+    return [self.mutableRooms arrayFromArraysWithBlock:^(id room) {
+        return [room carWashers];
     }];
 }
 
 - (NSArray *)accountants {
-    return [self.mutableRooms arrayFromSubArraysWithBlock:^(id object) {
-        return [object accountants];
+    return [self.mutableRooms arrayFromArraysWithBlock:^(id room) {
+        return [room accountants];
     }];
 }
 
 - (NSArray *)directors {
-    return [self.mutableRooms arrayFromSubArraysWithBlock:^(id object) {
-        return [object directors];
+    return [self.mutableRooms arrayFromArraysWithBlock:^(id room) {
+        return [room directors];
     }];
 }
 

@@ -16,6 +16,7 @@
 
 - (void)addWorker:(IDPWorker *)worker;
 - (void)removeWorker:(IDPWorker *)worker;
+
 - (NSArray *)carWashers;
 - (NSArray *)accountants;
 - (NSArray *)directors;

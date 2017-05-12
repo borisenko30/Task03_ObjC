@@ -12,7 +12,7 @@
 
 + (instancetype)objectsWithCount:(NSInteger)count factoryBlock:(id (^)(void))block;
 
-- (instancetype)arrayFromSubArraysWithBlock:(NSArray *(^)(id))block;
+- (instancetype)arrayFromArraysWithBlock:(NSArray *(^)(id))block;
 
 - (instancetype)filteredArrayWithBlock:(BOOL(^)(id object))block;
 

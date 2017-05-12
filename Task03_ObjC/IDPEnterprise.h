@@ -11,7 +11,6 @@
 #import "IDPMoneyFlow.h"
 
 @class IDPBuilding;
-@class IDPWorker;
 @class IDPCar;
 
 @interface IDPEnterprise : NSObject
